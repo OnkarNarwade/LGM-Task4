@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  * {
+    background: #eeeeee;
+    font-family: "Pattaya", sans-serif;
+  }
+  .calculatormov {
+    height: 80%;
+    width: 20%;
+    background: url("https://i.imgur.com/GUC97Wz.png") no-repeat;
+    background-size: cover;
+    background-position: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, rgba(255, 255, 255, 0.349));
+  }
+  
+  .calculator {
+    height: 65vh;
+    width: 80%;
+  }
+  .result {
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 2%;
+  }
+  .result input {
+    width: 100%;
+    height: 45%;
+    font-size: 4vh;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: "Orbitron", sans-serif;
+  }
+  .buttons {
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(5, 18%);
+    grid-gap: 2%;
+  }
+  
+  .button {
+    will-change: contents;
+    border-radius: 50%;
+    font-weight: bold;
+    border: none;
+    font-size: 2vh;
+    box-shadow: -0px 1px 1px rgba(0, 0, 0, 0.349), -2px -1px white;
+    transition: box-shadow 300ms, font-size 200ms;
+  }
+  .button:hover {
+    box-shadow: -0px 1px 1px rgba(0, 0, 0, 0.349) inset, -2px -1px white inset;
+    cursor: pointer;
+    font-size: 1.9vh;
+  }
+  .cero {
+    grid-column: 1/3;
+    border-radius: 2vw;
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .calculatormov {
+      width: 30%;
+      height: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      height: 100vh;
+      align-items: flex-start;
+    }
+    .calculatormov {
+      height: 100%;
+      width: 100%;
+      transform: scale(0.9);
+    }
+    .calculator {
+      height: 80%;
+      width: 80%;
+    }
+    .result {
+      height: 40%;
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+  h3{
+      color: rgb(77, 152, 250);
+      position: absolute;
+      justify-self: center;
+      
+  }
+  
